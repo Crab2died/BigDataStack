@@ -41,10 +41,10 @@
       hadoop version    # 成功会返回版本信息
       ```
    4. 伪分布式配置
-      进入${HADOOP_HOME}/etc/hadoop目录中，修改以下文件
-      1. 修改 hadoop-env.sh
-         将export JAVA_HOME=${JAVA_HOME}改成export JAVA_HOME=/usr/local/jdk1.8.0_181  # JDK根目录
-      2. 修改 core-site.xml    
+      进入`${HADOOP_HOME}/etc/hadoop`目录中，修改以下文件
+      - 修改 hadoop-env.sh  
+         将`export JAVA_HOME=${JAVA_HOME}`改成`export JAVA_HOME=/usr/local/jdk1.8.0_181  # JDK根目录`
+      - 修改 core-site.xml    
          ```xml
          <configuration>
              <property>
@@ -58,7 +58,7 @@
              </property>
          </configuration>
          ```  
-      3. 修改 hdfs-site.xml
+      - 修改 hdfs-site.xml
          ```xml
          <configuration>
             <property>
@@ -87,7 +87,7 @@
             </property>
          </configuration>
          ```
-      4. 先复制`cp mapred-site.xml.template mapred-site.xml`,在修改 mapred-site.xml
+      - 先复制`cp mapred-site.xml.template mapred-site.xml`,在修改 mapred-site.xml
          ```xml
          <configuration>
              <property>
@@ -96,7 +96,7 @@
              </property>
          </configuration>
          ```
-      5. 修改 yarn-site.xml
+      - 修改 yarn-site.xml
          ```xml
          <configuration>
             <property>
@@ -118,21 +118,20 @@
       hdfs namenode -format
       ```
    6. 启动集群
-      1. 启动HDFS集群
+      - 启动HDFS集群
          ```bash
          hadoop-daemon.sh start namenode
          hadoop-daemon.sh start datanode
          hadoop-daemon.sh start secondarynamenode
          ```
-      2. 启动YARN
+      - 启动YARN
          ```bash
          yarn-daemon.sh start resourcemanager
          yarn-daemon.sh start nodemanager
          ```
-   7. jps查看进程
-      ```bash
-      ```
-   8. 查看HDFS管理界面
+   7. jps查看进程  
+      ![hadoop jps](https://raw.githubusercontent.com/Crab2died/BigDataStack/master/docs/imgs/hadoop-jps.png)
+   8. 查看HDFS管理界面:  
       [http://crab2died:50070](http://crab2died:50070)
-   9. 查看YARN管理界面
+   9. 查看YARN管理界面:  
       [http://crab2died:8088](http://crab2died:8088)
