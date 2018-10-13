@@ -2,7 +2,9 @@
 ---
 ## 环境准备
 ### Ubuntu、JDK8、Hadoop2.8.5
-   安装Ubuntu; 安装JDK,修改环境变量; [下载Hadoop2.8.5](http://hadoop.apache.org/)
+   [安装Ubuntu](https://www.ubuntu.com/download/desktop);
+   [安装JDK,修改环境变量](https://www.oracle.com/technetwork/java/javase/downloads/index.html);
+   [下载Hadoop2.8.5](http://hadoop.apache.org/)
 
 ### 其他准备
    1. 更新apt `sudo apt-get update`
@@ -122,7 +124,7 @@
          ```bash
          hadoop-daemon.sh start namenode
          hadoop-daemon.sh start datanode
-         hadoop-daemon.sh start secondarynamenode
+         hadoop-daemon.sh start secondarynamenode  # 伪集群才有
          ```
       - 启动YARN
          ```bash
