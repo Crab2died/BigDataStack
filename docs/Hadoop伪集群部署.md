@@ -37,6 +37,8 @@
       # 添加
       export HADOOP_HOME=/usr/local/hadoop-2.8.5 
       export PATH=$PATH:${HADOOP_HOME}/sbin:${HADOOP_HOME}/bin
+      # 保存执行
+      source /etc/profile
       ```
    3. 验证Hadoop版本
       ```bash
