@@ -42,7 +42,7 @@
               <name>hbase.cluster.distributed</name>
               <value>true</value> 
           </property>
-      <configuration/>
+      </configuration>
       ```
    5. 修改文件${HBASE_HOME}/conf/regionservers
       将`localhost`改为`crab2died`
