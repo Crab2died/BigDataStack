@@ -1,4 +1,4 @@
-#                                           HBase 伪集群部署
+#                                           HBase 伪分布式部署
 ---
 ## 环境准备
 ### Ubuntu、JDK8、Hadoop2.8.5、HBase2.1.0
@@ -8,7 +8,7 @@
    [下载HBase2.1.0](http://hbase.apache.org/)
 
 ### 其他准备
-   部署Hadoop详见[Hadoop 伪集群部署](https://github.com/Crab2died/BigDataStack/blob/master/docs/Hadoop%E4%BC%AA%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.md)
+   部署Hadoop详见: [Hadoop 伪分布式部署](https://github.com/Crab2died/BigDataStack/blob/master/docs/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2.md)
    
 ### 部署HBase
    1. 解压HBase
@@ -58,7 +58,7 @@
       # 成功则会返回版本信息
       ```
 ### 启动HBase
-   1. 先启动Hadoop,详见[Hadoop 伪集群部署](https://github.com/Crab2died/BigDataStack/blob/master/docs/Hadoop%E4%BC%AA%E9%9B%86%E7%BE%A4%E9%83%A8%E7%BD%B2.md)
+   1. 先启动Hadoop,详见: [Hadoop 伪分布式部署](https://github.com/Crab2died/BigDataStack/blob/master/docs/Hadoop%E4%BC%AA%E5%88%86%E5%B8%83%E5%BC%8F%E9%83%A8%E7%BD%B2.md)
    2. 启动HBase
       ```bash
       start-hbase.sh 
