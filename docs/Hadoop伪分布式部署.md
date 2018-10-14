@@ -1,4 +1,4 @@
-#                                           Hadoop 伪集群部署
+#                                           Hadoop 伪分布式部署
 ---
 ## 环境准备
 ### Ubuntu、JDK8、Hadoop2.8.5
@@ -126,7 +126,7 @@
          ```bash
          hadoop-daemon.sh start namenode
          hadoop-daemon.sh start datanode
-         hadoop-daemon.sh start secondarynamenode  # 伪集群才有
+         hadoop-daemon.sh start secondarynamenode  # 伪分布式才有
          ```
       - 启动YARN
          ```bash

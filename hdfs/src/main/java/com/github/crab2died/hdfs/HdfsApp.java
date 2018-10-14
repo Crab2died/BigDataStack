@@ -1,4 +1,4 @@
-package com.github.crab2died;
+package com.github.crab2died.hdfs;
 
 
 import org.apache.hadoop.conf.Configuration;
