@@ -9,6 +9,7 @@
     <modules>
         <module>hdfs</module>
         <module>hbase</module>
+        <module>mapred</module>
     </modules>
     <packaging>pom</packaging>
 

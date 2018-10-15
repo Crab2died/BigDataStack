@@ -36,7 +36,7 @@ public class HdfsApp {
             if (!fileSystem.exists(dir))
                 fileSystem.mkdirs(new Path("/hdfs"));
 
-            FSDataOutputStream out = fileSystem.create(new Path("/hdfs/file1.txt"));
+            FSDataOutputStream out = fileSystem.create(new Path("/home/crab2died/file.txt"));
 
             InputStream in = new FileInputStream("file.txt");
 
