@@ -27,10 +27,10 @@ public class WFCJobSubmit {
         // 创建默认的Configuration对象
         Configuration conf = new Configuration();
         conf.set("fs.defaultFS", "hdfs://crab2died:9000/");
-//        conf.set("mapreduce.job.jar", "mapred/target/mapred-1.0-SNAPSHOT.jar");
-//        conf.set("mapreduce.framework.name", "yarn");
-//        conf.set("yarn.resourcemanager.hostname", "crab2died");
-//        conf.set("mapreduce.app-submission.cross-platform", "true");
+        conf.set("mapreduce.job.jar", "mapred/target/mapred-1.0-SNAPSHOT.jar");
+        conf.set("mapreduce.framework.name", "yarn");
+        conf.set("yarn.resourcemanager.hostname", "crab2died");
+        conf.set("mapreduce.app-submission.cross-platform", "true");
         // 根据地址和conf得到hadoop的文件系统独享
         // 如果输入路径已经存在则删除
         FileSystem fs = FileSystem.get(conf);
