@@ -134,7 +134,7 @@
          yarn-daemon.sh start nodemanager
          ```
    7. jps查看进程  
-      ![hadoop jps](https://raw.githubusercontent.com/Crab2died/BigDataStack/master/docs/imgs/hadoop-jps.png)
+      ![hadoop jps](https://raw.githubusercontent.com/Crab2died/big-data-stack/master/docs/imgs/hadoop-jps.png)
    8. 查看HDFS管理界面:  
       [http://crab2died:50070](http://crab2died:50070)
    9. 查看YARN管理界面:  
