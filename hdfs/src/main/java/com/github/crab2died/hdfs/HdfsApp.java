@@ -38,7 +38,7 @@ public class HdfsApp {
 
             FSDataOutputStream out = fileSystem.create(new Path("/home/crab2died/file.txt"));
 
-            InputStream in = new FileInputStream("file.txt");
+            InputStream in = new FileInputStream("LICENSE");
 
             IOUtils.copyBytes(in, out, 1024, true);
 
