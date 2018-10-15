@@ -14,14 +14,15 @@ import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 
 import java.io.IOException;
 
+// 词频统计
 public class WFCJobSubmit {
 
     public static void main(String... args) throws IOException, ClassNotFoundException, InterruptedException {
-
+        // 设置hadoop用户权限
         System.setProperty("HADOOP_USER_NAME", "crab2died");
         // Path类为hadoop API定义，创建两个Path对象，一个输入文件的路径，一个输入结果的路径
         Path outPath = new Path("hdfs://crab2died:9000/out");
-        // 输入文件的路径为本地linux系统的文件路径
+        // 输入hadoop的文件路径
         Path inPath = new Path("/home/crab2died/file.txt");
         // 创建默认的Configuration对象
         Configuration conf = new Configuration();
@@ -41,6 +42,7 @@ public class WFCJobSubmit {
 
         // 解决找不到类错误
         job.setJarByClass(WFCJobSubmit.class);
+
         // 1.1
         // FileInputFormat类设置要读取的文件路径
         FileInputFormat.setInputPaths(job, inPath);
@@ -50,7 +52,7 @@ public class WFCJobSubmit {
         // 1.2调用自定义的Mapper类的map方法进行操作
         // 设置处理的Mapper类
         job.setMapperClass(WFCMapper.class);
-        // 设置Mapper类处理完毕之后输出的键值对 的 数据类型
+        // 设置Mapper类处理完毕之后输出的键值对的数据类型
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(LongWritable.class);
 
