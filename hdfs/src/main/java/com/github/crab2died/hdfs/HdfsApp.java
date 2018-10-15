@@ -42,9 +42,9 @@ public class HdfsApp {
 
             IOUtils.copyBytes(in, out, 1024, true);
 
-            // fileSystem.copyFromLocalFile(false, new Path("file.txt"), new Path("/hdfs/file2.txt"));
-
-            // fileSystem.delete(dir, true);
+//             fileSystem.copyFromLocalFile(false, new Path("file.txt"), new Path("/hdfs/file2.txt"));
+//
+//             fileSystem.delete(dir, true);
 
         } catch (IOException | InterruptedException | URISyntaxException e) {
             e.printStackTrace();
