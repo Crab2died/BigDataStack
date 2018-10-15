@@ -14,7 +14,7 @@ import org.apache.hadoop.mapreduce.lib.partition.HashPartitioner;
 
 import java.io.IOException;
 
-public class JobSubmit {
+public class WFCJobSubmit {
 
     public static void main(String... args) throws IOException, ClassNotFoundException, InterruptedException {
 
