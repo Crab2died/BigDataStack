@@ -1,7 +1,7 @@
 #                                           Hadoop 伪分布式部署
 ---
 ## 环境准备
-### Ubuntu、JDK8、Hadoop2.8.5
+### 准备Ubuntu、JDK8、Hadoop2.8.5
    [安装Ubuntu](https://www.ubuntu.com/download/desktop);
    [安装JDK,修改环境变量](https://www.oracle.com/technetwork/java/javase/downloads/index.html);
    [下载Hadoop2.8.5](http://hadoop.apache.org/)
@@ -21,7 +21,7 @@
       ```bash
       sudo vi /etc/hosts
       # 添加 
-      0.0.0.0   crab2died    # 一定是0.0.0.0，否则外部client无法访问HDFS的9000端口 
+      本机ip   crab2died
       ```   
 ## 安装Hadoop
    1. 解压Hadoop
@@ -91,7 +91,7 @@
             </property>
          </configuration>
          ```
-      - 先复制`cp mapred-site.xml.template mapred-site.xml`,在修改 mapred-site.xml
+      - 先复制`cp mapred-site.xml.template mapred-site.xml`,再修改 mapred-site.xml
          ```xml
          <configuration>
              <property>
