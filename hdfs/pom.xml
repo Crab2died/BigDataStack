@@ -11,7 +11,7 @@
     <artifactId>hdfs</artifactId>
 
     <name>hdfs</name>
-    <url>http://www.example.com</url>
+    <url>https://dsolvers.github.io/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

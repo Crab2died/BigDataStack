@@ -14,7 +14,29 @@
     <packaging>pom</packaging>
 
     <name>Big-Data Stack</name>
-    <url>http://www.example.com</url>
+    <url>https://dsolvers.github.io/</url>
+
+    <developers>
+        <developer>
+            <name>Crab2Died</name>
+            <timezone>+8</timezone>
+            <organization>Dsolvers</organization>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Crab2died/big-data-stack</url>
+        <connection>scm:git:https://github.com/Crab2died/big-data-stack.git</connection>
+        <developerConnection>scm:git:https://github.com/Crab2died/big-data-stack.git</developerConnection>
+    </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,17 +65,17 @@
                 <version>4.11</version>
                 <scope>test</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <build>
-        <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+        <pluginManagement>
             <plugins>
                 <plugin>
                     <artifactId>maven-clean-plugin</artifactId>
                     <version>3.0.0</version>
                 </plugin>
-                <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
                 <plugin>
                     <artifactId>maven-resources-plugin</artifactId>
                     <version>3.0.2</version>

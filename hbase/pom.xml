@@ -11,7 +11,7 @@
     <artifactId>hbase</artifactId>
 
     <name>hbase</name>
-    <url>http://www.example.com</url>
+    <url>https://dsolvers.github.io/</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,6 +30,7 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 </project>
