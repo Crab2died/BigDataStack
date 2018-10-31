@@ -1,0 +1,75 @@
+=                       Hive 部署
+
+---
+== 环境准备 ==
+=== Ubuntu、JDK8、Hadoop2.8.5、MySQL5.7、Hive2.3.3 ===
+* https://www.ubuntu.com/download/desktop[安装Ubuntu]
+* https://www.oracle.com/technetwork/java/javase/downloads/index.html[安装JDK,修改环境变量]
+* http://hadoop.apache.org/[安装Hadoop2.8.5]
+* 安装MySQL
+* http://mirrors.shu.edu.cn/apache/hive/hive-2.3.3[下载Hive]
+
+=== 安装MySQL ===
+* 安装MySQL,依次执行
+****
+[source, bash]
+----
+  sudo apt-get install mysql-server
+
+  sudo apt install mysql-client
+    
+  sudo apt install libmysqlclient-dev
+----
+****
+
+* 配置MySQL
+****
+* 修改配置mysqld.cnf
+
+[source, bash]
+----
+  sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+  # 注释掉 bind-address = 127.0.0.1
+----
+
+* 重启MySQL服务
+
+[source, bash]
+----
+  sudo service mysql stop    # close mysql service
+  
+  sudo service mysql start   # restart mysql service
+  
+  sudo service mysql status  # lookup mysql status
+----
+****
+ 
+.登入MySQL, 并修改密码
+****
+
+* 获取初始账号密码并登入mysql
+
+[source, bash]
+----
+  # 获取user & password
+  sudo cat /etc/mysql/debian.cnf
+  
+  # 登入并修改密码和host
+  mysql -u[上面获取的用户] -p[上面获取的密码]
+  
+  use mysql
+  
+  update user set authentication_string=password('123456'),host='%' where user='root';
+  
+  quit;
+  
+  # 重启mysql
+----
+****
+
+
+
+
+
+
+
