@@ -9,7 +9,10 @@
 * 安装MySQL
 * http://mirrors.shu.edu.cn/apache/hive/hive-2.3.3[下载Hive]
 
+
+== 安装部署 ==
 === 安装MySQL ===
+
 * 安装MySQL,依次执行
 ****
 [source, bash]
@@ -44,28 +47,32 @@
 ----
 ****
  
-.登入MySQL, 并修改密码
+* 登入MySQL, 并修改密码
 ****
-
-* 获取初始账号密码并登入mysql
-
 [source, bash]
 ----
   # 获取user & password
   sudo cat /etc/mysql/debian.cnf
   
-  # 登入并修改密码和host
+  # 登入
   mysql -u[上面获取的用户] -p[上面获取的密码]
   
+  # 进入mysql库
   use mysql
   
+  # 修改密码和host
   update user set authentication_string=password('123456'),host='%' where user='root';
   
+  # 退出
   quit;
   
   # 重启mysql
+  sudo service mysql restart
 ----
 ****
+
+=== 安装Hive ===
+
 
 
 
