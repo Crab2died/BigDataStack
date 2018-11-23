@@ -20,7 +20,7 @@
       ```
    2. 配置HBase环境变量
       ```bash
-      export HBASE_HOME=//usr/local/hbase-2.1.0
+      export HBASE_HOME=/usr/local/hbase-2.1.0
       export HBASE_CONF_DIR=${HBASE_HOME}/conf
       export HBASE_CLASS_PATH=${HBASE_CONF_DIR}
       export PATH=$PATH:${HBASE_HOME}/bin
@@ -36,7 +36,7 @@
       <configuration>
           <property>
               <name>hbase.rootdir</name>
-              <value>hdfs://crab2died:9000</value>
+              <value>hdfs://crab2died:9000/</value>
           </property>
           <property> 
               <name>hbase.cluster.distributed</name>
