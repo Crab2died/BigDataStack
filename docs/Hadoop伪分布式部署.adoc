@@ -143,7 +143,6 @@
 ----
 ****
 === 5. 格式化HDFS NameNode ===
-
 [source, bash]
 ----
   hdfs namenode -format
@@ -158,14 +157,21 @@
     hadoop-daemon.sh start secondarynamenode  # 伪分布式才有
 ----
 * 启动YARN
-
 [source, bash]
 ----
     yarn-daemon.sh start resourcemanager
     yarn-daemon.sh start nodemanager
 ----
 === 7. jps查看进程 ===
-image:https://raw.githubusercontent.com/Crab2died/big-data-stack/master/docs/imgs/hadoop-jps.png[hadoop jps]
+[source, bash]
+----
+    ~ jps
+    3537 NameNode
+    4098 NodeManager
+    3845 ResourceManager
+    3638 DataNode
+    3755 SecondaryNameNode
+----
 
 === 8. 查看HDFS管理界面 ===  
 http://crab2died:50070[http://crab2died:50070]
