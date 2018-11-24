@@ -71,4 +71,6 @@
       ```bash
       hbase shell
       ```
-      
+
+### 文档
+   [HBase中文文档](http://abloz.com/hbase/book.html#d613e75)

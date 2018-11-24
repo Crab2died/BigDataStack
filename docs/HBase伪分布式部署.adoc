@@ -97,3 +97,6 @@ http://crab2died:16030[http://crab2died:16030]
 ----
   hbase shell
 ----
+
+== 文档 ==
+http://abloz.com/hbase/book.html#d613e75[HBase中文文档]
