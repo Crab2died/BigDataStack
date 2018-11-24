@@ -2,8 +2,8 @@
 ---
 ## 环境准备
 ### 准备Ubuntu、JDK8、Hadoop2.8.5
-   [安装Ubuntu](https://www.ubuntu.com/download/desktop);
-   [安装JDK,修改环境变量](https://www.oracle.com/technetwork/java/javase/downloads/index.html);
+   [安装Ubuntu](https://www.ubuntu.com/download/desktop);  
+   [安装JDK,修改环境变量](https://www.oracle.com/technetwork/java/javase/downloads/index.html);  
    [下载Hadoop2.8.5](http://hadoop.apache.org/)
 
 ### 其他准备
